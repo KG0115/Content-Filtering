@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Stylesheet.css">
+  <title>Content Filtering</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Content Filtering</h2>
+
+  <div id="filter-buttons">
+    <button class="btn btn-primary active" data-filter="all">All</button>
+    <button class="btn btn-primary" data-filter="Courses">Courses</button>
+    <button class="btn btn-primary" data-filter="Projects">Projects</button>
+
+    <!-- Add more buttons as needed -->
+  </div>
+
+  <div id="content-section">
+    <div class="content-item" data-category="Courses" data-date="2023-08-30">
+      <h3>Web Design & Development</h3>
+      <p data-tags="comp-sci class">Web Design</p>
+      <p data-tags="date">August 30, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Projects" data-date="2023-11-16">
+      <h3>JQuery Content Filtering</h3>
+      <p data-tags="coding, web, project">Coding project related to web development</p>
+      <p data-tags="date">November 16, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Courses" data-date="2023-08-31">
+      <h3>Database Management</h3>
+      <p data-tags="comp-sci class">Database Management</p>
+      <p data-tags="date">August 31, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Projects" data-date="2023-11-12">
+      <h3>Personal Website</h3>
+      <p data-tags="coding, web, project">Personal Website Portfolio</p>
+      <p data-tags="date">November 12, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Courses" data-date="2023-08-30">
+      <h3>Object Oriented Programming</h3>
+      <p data-tags="comp-sci class">Programming with Java</p>
+      <p data-tags="date">August 30, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Projects" data-date="2023-09-10">
+      <h3>Counter App</h3>
+      <p data-tags="coding, web, project">Increment & Decrement Counting app</p>
+      <p data-tags="date">September 10, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Projects" data-date="2023-09-11">
+      <h3>Countdown Timer</h3>
+      <p data-tags="comp-sci class">Countdown Timer for my Birthday</p>
+      <p data-tags="date">September 11, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Courses" data-date="2023-09-03">
+      <h3>Spanish Language & Culture I</h3>
+      <p data-tags="elective class">Foreign language course</p>
+      <p data-tags="date">September 3, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Courses" data-date="2023-09-01">
+      <h3>Fitness & Wellness</h3>
+      <p data-tags="elective class">Health course</p>
+      <p data-tags="date">September 1, 2023</p>
+    </div>
+
+    <div class="content-item" data-category="Projects" data-date="2023-11-15">
+      <h3>Ajax & JSON</h3>
+      <p data-tags="comp-sci class">Interactive Quiz App Modification</p>
+      <p data-tags="date">November 15, 2023</p>
+    </div>
+
+  </div>
+  <div id="sort-buttons">
+    <button class="btn btn-secondary" data-sort="name-asc">Sort by Name (Asc)</button>
+    <button class="btn btn-secondary" data-sort="name-desc">Sort by Name (Desc)</button>
+    <button class="btn btn-secondary" data-sort="date-asc">Sort by Date (Asc)</button>
+    <button class="btn btn-secondary" data-sort="date-desc">Sort by Date (Desc)</button>
+  </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
